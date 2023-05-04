@@ -1,0 +1,15 @@
+query getTerms($fullText: String!){
+  autocompleteSearchSuggestions(fullText: $fullText) 
+  @context(provider: "vtex.search-graphql")
+  {
+    searches{
+      term
+      count
+      attributes{
+        key
+        value
+        labelValue
+      }
+    }
+  }
+}

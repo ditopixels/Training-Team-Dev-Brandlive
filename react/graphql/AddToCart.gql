@@ -1,0 +1,11 @@
+mutation addToCart(
+  $items: [ItemInput]
+  $salesChannel: String
+  $allowedOutdatedData: [String!]
+) @context(provider: "vtex.checkout-graphql") {
+  addToCart(
+    items: $items
+    salesChannel: $salesChannel
+    allowedOutdatedData: $allowedOutdatedData
+  )
+}
