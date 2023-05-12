@@ -1,5 +1,8 @@
 {
-    "buscador":{
-        "component": "Search"
+    "arma-tu-pack":{
+        "component": "ArmaTuPack"
+    },
+    "add-to-list-arma-tu-pack":{
+        "component": "AddToList"
     }
 }

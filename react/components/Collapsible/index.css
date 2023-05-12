@@ -1,0 +1,57 @@
+.collapsible {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.collapsible-container svg{
+    transition: transform 250ms ease-in-out 0s, color 250ms ease-in-out 0s;
+}
+:global(.vtex-styleguide-9-x-jsFocusVisible) [aria-expanded="false"] svg{
+    transform: rotate(0deg) !important;
+}
+:global(.vtex-styleguide-9-x-jsFocusVisible) [aria-expanded="true"] svg{
+    transform: rotate(180deg) !important;
+}
+
+.collapsible-container :global(.vtex-styleguide-9-x-jsFocusVisible) > div:first-child >div:last-child{
+    display: none;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .collapsible-content{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-col-mobile) .collapsible-container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-col-mobile) .collapsible{
+    font-weight: 700;
+    color: #292929;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-col-mobile) .collapsible-open{
+    color: #1D71B8;
+}
+
+.collapsible-content ul{
+    font-size: 14px;
+    color: #505050;
+}
+
+@media screen and (max-width: 1024px) {
+  .collapsible-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--pdp-col-mobile) .collapsible{
+        font-size: 14px;
+    }   
+}

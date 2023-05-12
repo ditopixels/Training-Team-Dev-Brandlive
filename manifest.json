@@ -1,6 +1,6 @@
 {
-  "vendor": "ortopedicosfuturoco",
-  "name": "buscador",
+  "vendor": "alfagresqa",
+  "name": "arma-tu-pack",
   "version": "0.0.0",
   "builders": {
     "store": "0.x",
@@ -30,7 +30,8 @@
     "vtex.store-resources": "0.x",
     "vtex.checkout-resources": "0.x",
     "vtex.checkout-graphql": "0.x",
-    "vtex.order-items": "0.x"
+    "vtex.order-items": "0.x",
+    "vtex.product-context": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
